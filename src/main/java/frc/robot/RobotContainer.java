@@ -102,7 +102,7 @@ public class RobotContainer {
     grappin.whileTrue(new GrappinCommand(m_grappin,0.2));
     grappout.whileTrue(new GrappinCommand(m_grappin, -0.1));
     Shooterlow.whileTrue(( new ShooterCommand(m_shooter,-0.25)));// à changer
-    Shooterhigh.whileTrue(new ShooterCommand(m_shooter, -0.3));// à changer
+    Shooterhigh.whileTrue(new ShooterCommand(m_shooter, -1));// à changer
     align.whileTrue(new Align(m_drivetrain, m_limelight, m_pilote));
     intakein.whileTrue(new IntakeCommand(m_intake, true,m_copilote));
     swithlacam.whileTrue(new Switchlacam(m_camera, m_joystick));
